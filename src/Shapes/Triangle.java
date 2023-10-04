@@ -8,7 +8,7 @@ package Shapes;
  *
  * @author sande
  */
-public class Triangle {
+public class Triangle extends Shape{
     
     private int side1;
     private int side2;
@@ -22,6 +22,7 @@ public class Triangle {
     }
 
     public void setSide1(int side1) {
+        
         if (side1>0) {
         this.side1 = side1;
         }else{

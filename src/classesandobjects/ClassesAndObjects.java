@@ -4,6 +4,7 @@
  */
 package classesandobjects;
 
+import Shapes.Rectangle;
 import Shapes.Triangle;
 
 /**
@@ -43,6 +44,11 @@ public class ClassesAndObjects {
         sideLengths[10] = 3;
         sideLengths[13] = 3;
         sideLengths[16] = 3;
+        
+        
+        Rectangle rect1 = new Rectangle();  
+        double area = rect1.getArea();
+        System.out.println(area);
         
         
     }
