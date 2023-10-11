@@ -12,6 +12,16 @@ public abstract class Shape {//Abstrict because we can not make objects out of t
     
     private boolean isFilled;
     protected String colour = "Yellow";
+    
+    public Shape(){
+        System.out.println("Shape 1");
+    }
+    
+    public Shape (boolean isFilled, String colour){
+        this.isFilled = isFilled;
+        this.colour = colour;
+        System.out.println("Shape 2");
+    }
 
     public boolean isIsFilled() {
         return isFilled;
