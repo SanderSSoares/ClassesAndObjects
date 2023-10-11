@@ -8,10 +8,10 @@ package Shapes;
  *
  * @author sande
  */
-public abstract class Shape {
+public abstract class Shape {//Abstrict because we can not make objects out of this. WE CAN NOT MAKE SHAPES!!!
     
     private boolean isFilled;
-    private String colour = "Yellow";
+    protected String colour = "Yellow";
 
     public boolean isIsFilled() {
         return isFilled;
@@ -29,8 +29,5 @@ public abstract class Shape {
         this.colour = colour;
     }
     
-    
-    
-    
-    
+    public abstract double getArea();//All classes will have areas, but will get form different methods    
 }

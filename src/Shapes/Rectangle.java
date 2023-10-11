@@ -8,10 +8,9 @@ package Shapes;
  *
  * @author sande
  */
-public class Rectangle {
+public class Rectangle extends Shape{
     
-    private String colour;
-    private boolean isFilled;
+
     private double height = 5.0;
     private double width = 6.2;
 
@@ -24,6 +23,7 @@ public class Rectangle {
         return width;
     }
     
+    @Override//has to be override in order to use the abstract getarea from shapes
       public double getArea(){
         return height*width;
     }
