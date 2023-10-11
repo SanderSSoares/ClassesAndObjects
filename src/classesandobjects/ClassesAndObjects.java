@@ -20,6 +20,7 @@ public class ClassesAndObjects {
         // TODO code application logic here
         
         Triangle tri1 = new Triangle();
+        System.out.println(tri1);
         Triangle tri2 = new Triangle();
         Triangle tri3 = new Triangle();
         Triangle tri4 = new Triangle();
@@ -50,7 +51,9 @@ public class ClassesAndObjects {
         double area = rect1.getArea();
         System.out.println(area);
         
-        
+        Circle cir = new Circle();
+       double areaC = cir.getArea();
+        System.out.println(areaC);
     }
     
 }
