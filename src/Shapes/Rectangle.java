@@ -8,7 +8,7 @@ package Shapes;
  *
  * @author sande
  */
-public class Rectangle extends Shape{
+public class Rectangle extends Shape implements Shape2D{
     
 
     private double height = 5.0;
@@ -33,10 +33,9 @@ public class Rectangle extends Shape{
     @Override//has to be override in order to use the abstract getarea from shapes
       public double getArea(){
         return height*width;
+    } 
+    @Override
+    public double calculateAngles(){
+        return 90;
     }
-    
-    
-    
-    
-    
 }

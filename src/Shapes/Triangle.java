@@ -8,7 +8,7 @@ package Shapes;
  *
  * @author sande
  */
-public class Triangle extends Shape{
+public class Triangle extends Shape implements Shape2D{
     
     private int side1;
     private int side2;
@@ -63,5 +63,10 @@ public class Triangle extends Shape{
     @Override
     public String toString(){
         return "Hello! I am a triangle with the colour of: " + colour;
+    }
+    
+     @Override
+    public double calculateAngles(){
+        return 60;
     }
 }
